@@ -2,7 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/go_up"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
@@ -21,7 +21,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/more"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -54,7 +54,7 @@
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/more" />
 
     <TextView
         android:id="@+id/textView3"
@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/search"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginStart="24dp"
@@ -119,7 +119,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/search" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
@@ -161,7 +161,7 @@
                 android:textSize="17sp" />
 
             <ImageView
-                android:id="@+id/MainDish"
+                android:id="@+id/mainDish"
                 style="@style/my_style"
                 android:layout_marginStart="17dp"
                 android:layout_toEndOf="@+id/salad"
@@ -172,8 +172,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/salad"
-                android:layout_alignStart="@+id/MainDish"
-                android:layout_alignEnd="@+id/MainDish"
+                android:layout_alignStart="@+id/mainDish"
+                android:layout_alignEnd="@+id/mainDish"
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginEnd="19dp"
@@ -185,19 +185,19 @@
                 android:textSize="17sp" />
 
             <ImageView
-                android:id="@+id/Drinks"
+                android:id="@+id/drinks"
                 style="@style/my_style"
                 android:layout_marginStart="17dp"
-                android:layout_toEndOf="@+id/MainDish"
+                android:layout_toEndOf="@+id/mainDish"
                 android:background="@drawable/category_card_bc"
                 app:srcCompat="@drawable/catergory_drinks" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/Drinks"
-                android:layout_alignStart="@+id/Drinks"
-                android:layout_alignEnd="@+id/Drinks"
+                android:layout_below="@+id/drinks"
+                android:layout_alignStart="@+id/drinks"
+                android:layout_alignEnd="@+id/drinks"
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginEnd="19dp"
@@ -209,19 +209,19 @@
                 android:textSize="17sp" />
 
             <ImageView
-                android:id="@+id/Dessert"
+                android:id="@+id/dessert"
                 style="@style/my_style"
                 android:layout_marginStart="17dp"
-                android:layout_toEndOf="@+id/Drinks"
+                android:layout_toEndOf="@+id/drinks"
                 android:background="@drawable/category_card_bc"
                 app:srcCompat="@drawable/category_dessert" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/Dessert"
-                android:layout_alignStart="@+id/Dessert"
-                android:layout_alignEnd="@+id/Dessert"
+                android:layout_below="@+id/dessert"
+                android:layout_alignStart="@+id/dessert"
+                android:layout_alignEnd="@+id/dessert"
                 android:layout_marginStart="1dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginEnd="1dp"
@@ -258,6 +258,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         tools:listitem="@layout/popular_rv_item"
         />
+
+    <ImageView
+        android:id="@+id/xyz"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/developer_ic"
+        android:background="@drawable/card_back_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
